@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light only" />
+  <title>Leonardo Bilhalva — iOS Developer</title>
+  <meta name="description" content="iOS developer from Porto Alegre, Brazil. I build apps end to end and ship my own to the App Store." />
+  <meta property="og:title" content="Leonardo Bilhalva — iOS Developer" />
+  <meta property="og:description" content="I build iOS apps end to end and ship my own to the App Store." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css?v=12" />
+</head>
+<body>
+  <div class="menu" onclick="navMenu(true)" role="button" aria-label="Open menu" tabindex="0"><svg viewBox="0 0 24 24" fill="none"><path d="M5 8H19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M5 16H19" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+  <div class="pill"><span class="dot"></span>Open to new job opportunities</div>
+
+  <!-- nav sidebar -->
+  <div class="nav-backdrop" id="navBackdrop" onclick="navMenu(false)"></div>
+  <aside class="nav-panel" id="navPanel" aria-hidden="true">
+    <button class="nav-close" onclick="navMenu(false)" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none"><path d="M6 6L18 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/><path d="M6 18L18 6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></button>
+    <a class="nav-home" href="#top" onclick="navMenu(false)">Homepage</a>
+    <div class="nav-group">
+      <div class="nav-glabel">Pages</div>
+      <a class="nl" href="apps.html">Apps</a>
+      <a class="nl" href="experience.html">Experience</a>
+      <a class="nl" href="#research" onclick="navMenu(false)">Research</a>
+      <a class="nl" href="writing.html">Writing</a>
+      <a class="nl" href="#films" onclick="navMenu(false)">Films</a>
+    </div>
+    <div class="nav-group">
+      <div class="nav-glabel">Projects</div>
+      <a class="nl" href="apps.html#chrono">Chrono</a>
+      <a class="nl" href="apps.html#tinygoods">Tiny Goods</a>
+    </div>
+    <div class="nav-socials">
+      <a href="https://github.com/leonardobilhalva" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.8c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg></a>
+      <a href="https://instagram.com/leonardobilhalva" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.4" fill="currentColor"/></svg></a>
+      <a href="https://linkedin.com/in/leonardobilhalva" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M20.5 2h-17C2.7 2 2 2.7 2 3.5v17c0 .8.7 1.5 1.5 1.5h17c.8 0 1.5-.7 1.5-1.5v-17c0-.8-.7-1.5-1.5-1.5zM8 19H5V9h3v10zM6.5 7.7a1.7 1.7 0 1 1 0-3.5 1.7 1.7 0 0 1 0 3.5zM19 19h-3v-5c0-1.2-.5-2-1.6-2-.9 0-1.4.6-1.6 1.2-.1.2-.1.5-.1.8v5h-3V9h3v1.4c.4-.6 1.1-1.5 2.7-1.5 2 0 3.2 1.3 3.2 4V19z"/></svg></a>
+      <a href="mailto:leobbbilhalva@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg></a>
+    </div>
+  </aside>
+
+  <main class="wrap" id="top">
+
+    <!-- HERO -->
+    <img class="avatar" src="assets/avatar.jpg?v=3" alt="Leonardo Bilhalva" />
+    <h1>Leonardo Bilhalva</h1>
+    <p class="intro">iOS Dev on work time. Indie Dev in my free time. Rooting for <span class="gremio"><span class="ga">G</span><span class="ga">r</span><span class="gw">ê</span><span class="gw">m</span><span class="gb">i</span><span class="gb">o</span></span> all the time.</p>
+    <div class="socials">
+      <a href="https://github.com/leonardobilhalva" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.8c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17.3 4.7 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+      </a>
+      <a href="https://instagram.com/leonardobilhalva" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.4" fill="currentColor"/></svg></a>
+      <a href="https://linkedin.com/in/leonardobilhalva" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M20.5 2h-17C2.7 2 2 2.7 2 3.5v17c0 .8.7 1.5 1.5 1.5h17c.8 0 1.5-.7 1.5-1.5v-17c0-.8-.7-1.5-1.5-1.5zM8 19H5V9h3v10zM6.5 7.7a1.7 1.7 0 1 1 0-3.5 1.7 1.7 0 0 1 0 3.5zM19 19h-3v-5c0-1.2-.5-2-1.6-2-.9 0-1.4.6-1.6 1.2-.1.2-.1.5-.1.8v5h-3V9h3v1.4c.4-.6 1.1-1.5 2.7-1.5 2 0 3.2 1.3 3.2 4V19z"/></svg>
+      </a>
+      <a href="mailto:leobbbilhalva@gmail.com" aria-label="Email">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      </a>
+    </div>
+
+    <!-- APPS -->
+    <section class="proj" id="apps">
+      <a class="label seclink" href="apps.html">Released apps on App Store<svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+      <a href="https://apps.apple.com/us/app/chrono-sleep-tracker/id6757658348" target="_blank" rel="noopener"><span class="n">Chrono</span> <span class="d">— A privacy-first sleep tracker with a little friend that grows with how you sleep.</span></a>
+      <a href="https://apps.apple.com/us/app/tiny-goods-coloring-books/id6763943965" target="_blank" rel="noopener"><span class="n">Tiny Goods</span> <span class="d">— A cozy coloring app that feels like real paper.</span></a>
+    </section>
+
+    <!-- WORK -->
+    <section class="work">
+      <a class="label seclink" href="experience.html">Work<svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+      <a class="row" href="experience.html#pret">
+        <div class="logo"><img src="assets/logos/pret.png?v=2" alt="" /></div>
+        <div class="who"><b>Prêt-à-Template</b> <span>— iOS Developer</span></div>
+        <div class="when">2023 — Now</div>
+      </a>
+      <a class="row" href="experience.html#liber">
+        <div class="logo"><img src="assets/logos/liber.png" alt="" /></div>
+        <div class="who"><b>Liber</b> <span>— Backend Intern</span></div>
+        <div class="when">2022 — 2023</div>
+      </a>
+      <a class="row" href="experience.html#bava">
+        <div class="logo"><img src="assets/logos/bava.png" alt="" /></div>
+        <div class="who"><b>Bava</b> <span>— DevOps Intern</span></div>
+        <div class="when">2022</div>
+      </a>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="work" id="education">
+      <div class="label">Education</div>
+      <a class="row" href="https://www.inf.ufrgs.br/site/" target="_blank" rel="noopener">
+        <div class="logo"><img class="contain" src="assets/logos/ufrgs.png" alt="" /></div>
+        <div class="who"><b>UFRGS</b> <span>— BSc in Computer Science</span></div>
+        <div class="when">2019 — 2026</div>
+      </a>
+      <p class="edu-note">Universidade Federal do Rio Grande do Sul</p>
+      <p class="edu-note edu-interests">Academic interests: Natural Language Processing, Machine Learning, and Distributed Systems.</p>
+    </section>
+
+    <!-- RESEARCH (placeholder) -->
+    <section class="proj" id="research">
+      <div class="label">Research</div>
+      <p class="ritem"><span class="n">Faithfulness of LLMs</span> <span class="d">— currently on it for my thesis. I'll write some thoughts here soon. <a class="reflink" href="https://arxiv.org/abs/2604.27251" target="_blank" rel="noopener">meanwhile, worth a read ↗</a></span></p>
+    </section>
+
+    <!-- WRITING -->
+    <section class="write" id="writing">
+      <a class="label seclink" href="writing.html">Writing<svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg></a>
+      <a href="apple-ab-test.html">Apple is Running the Biggest A/B Test in History</a>
+      <a href="#" class="ph">Building Chrono: HealthKit as your only backend (soon)</a>
+      <a href="#" class="ph">Things I Learned Shipping Two Apps (and I Think You Should Too)</a>
+    </section>
+
+    <!-- FILMS -->
+    <section id="films">
+      <div class="label">Favorite Films</div>
+      <p class="films-intro">A few I keep coming back to. The rest live on my <a href="https://letterboxd.com/leobilhalva/" target="_blank" rel="noopener">Letterboxd ↗</a>.</p>
+      <div class="films">
+        <a class="film" href="https://letterboxd.com/leobilhalva/" target="_blank" rel="noopener"><img src="assets/films/1.jpg" alt="Wall-E" /></a>
+        <a class="film" href="https://letterboxd.com/leobilhalva/" target="_blank" rel="noopener"><img src="assets/films/2.jpg" alt="The Incredibles" /></a>
+        <a class="film" href="https://letterboxd.com/leobilhalva/" target="_blank" rel="noopener"><img src="assets/films/3.jpg" alt="Gran Torino" /></a>
+        <a class="film" href="https://letterboxd.com/leobilhalva/" target="_blank" rel="noopener"><img src="assets/films/4.jpg" alt="Finding Nemo" /></a>
+      </div>
+    </section>
+
+    <div class="foot">Porto Alegre, Brazil · © 2026 Leonardo Bilhalva</div>
+
+  </main>
+
+  <script>
+    function navMenu(open){
+      document.getElementById('navPanel').classList.toggle('open', open);
+      document.getElementById('navBackdrop').classList.toggle('open', open);
+      document.getElementById('navPanel').setAttribute('aria-hidden', open ? 'false' : 'true');
+      document.body.style.overflow = open ? 'hidden' : '';
+    }
+    document.addEventListener('keydown', e => { if(e.key === 'Escape') navMenu(false); });
+  </script>
+</body>
+</html>
